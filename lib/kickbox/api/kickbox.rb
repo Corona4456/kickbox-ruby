@@ -23,6 +23,15 @@ module Kickbox
         @client.get("/verify?email=#{email}&timeout=#{timeout}", body, options)
       end
 
+      # Balance
+      #
+      # '/balance' GET
+      #
+      # 
+      def balance
+        @client.get("/balance")
+      end
+
     end
 
   end
